@@ -116,8 +116,8 @@ function realtimeview() {
 
         // Append the World Map
         var worldMap = g.append('path')
-            .attr('clip-path', 'url(#clip-path)') // attaches the clip path to not draw the map underneath the x axis
-            .datum(topojson.merge(world, world.objects.countries.geometries)) // draws a single land object for the entire map
+            .attr('clip-path', 'url(#clip-path)')
+            .datum(topojson.merge(world, world.objects.countries.geometries))
             .attr('class', 'land')
             .attr('d', path)
 
